@@ -1,6 +1,7 @@
 package com.shubham;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class CollectionsDemo {
@@ -19,6 +20,12 @@ public class CollectionsDemo {
 		for(String s:list)
 		{
 			System.out.println(s);
+		}
+		
+		Iterator<String> itr = list.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
 		}
 	}
 
